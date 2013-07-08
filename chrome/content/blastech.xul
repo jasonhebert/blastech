@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!DOCTYPE window SYSTEM "chrome://blastech/locale/blastech.dtd">
+
+<!--
+/*
+*===============================================================================
+*
+* Main  Blastech XUL file. It starts Blastech Steel Plate Requisitioning.
+*
+* @FileName: blastech.xul
+*
+* @Author: Jason Hebert
+* @Copyright Northrop Grumman Ship Systems
+*
+* @Version 0.3
+* @Revision History: 12/01/2003 - Begin development
+*
+*===============================================================================
+*/
+-->
+<!--====================== INCLUDE DTD ======================================-->
+
+
+
+<!--====================== INCLUDE STYLESHEETS ==============================-->
+
+
+<?xml-stylesheet href="../skin/blastech.css" type="text/css"?>
+<?xul-overlay href="overlay/main_menubar.xul"?> 
+<?xul-overlay href="overlay/search_toolbar.xul"?>
+<?xul-overlay href="overlay/icon_toolbar.xul"?>
+<?xul-overlay href="overlay/forecast_tree.xul"?>
+<?xul-overlay href="overlay/status_statusbar.xul"?>
+<?xul-overlay href="overlay/req_tree.xul"?>
+<?xul-overlay href="overlay/qbl_tree.xul"?>
+<!--====================== INCLUDE OVERLAYS =================================-->
+
+
+<!--====================== MAIN WINDOW ======================================-->
+
+<window id="main_window"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    windowtype="blastech:main" title="&blast.main_window.title;"
+    orient="vertical" height="600" width="800" minheight="600" minwidth="800"
+    persist="height width screenX screenY"
+    onload="main()">
+
+<!--====================== INCLUDE JAVASCRIPT ===============================-->
+
+<script src="chrome://blastech/content/js/jslib.js" />
+<script src="chrome://blastech/content/js/io/io.js" />
+<script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js"/>
+
+<script src="js/blastMain.js" type="application/x-javascript" />
+<script src="js/ForecastXML.js" type="application/x-javascript" />
+<script src="js/QblXML.js" type="application/x-javascript" />
+
+<commandset id="blastCommand">
+    <commandset id="menubarCommand" />
+    <command id="findCmd" oncommand="loadForeTree()" />
+</commandset>
+
+<!--====================== UI Start =========================================-->
+<toolbox id="main-toolbox" iconsize="small">
+    <!-- Menubar overlay -->
+    <menubar id="main-menubar"/>
+	<!-- Overlay Toolbar icon -->  
+	<toolbar id="icon-toolbar"/>
+	<!-- Overlay Search toolbar -->
+	<toolbar id="search-toolbar"/>
+
+</toolbox>
+
+<hbox flex="1" id="main-box">
+    <vbox flex="6">
+		<!-- Tree Overlay -->
+		<label value="&blast.foreDetails.label;"/>
+        <tree id="forecast-tree" />
+    </vbox>
+    <splitter id="detail-comment" collapse="after" persist="state">
+        <grippy/>
+    </splitter>
+	<vbox flex="3">
+        <label value="&blast.qblDetails.label;"/>
+        <tree id="qbl-tree" />
+    </vbox>
+</hbox>
+<splitter id="detail-splitter" collapse="after" hidden="false">
+<grippy/>
+</splitter>
+<hbox flex="1" id="req-box" >
+    <vbox flex="1">
+        <label value="&blast.reqDetails.label;"/>
+        <tree id="req-tree" />
+    </vbox>
+</hbox>
+<!-- Debug Output -->
+<splitter id="debug-splitter" collapse="after" state="collapsed" persist="state">
+<grippy/>
+</splitter>
+<textbox id="debug-output" multiline="true" rows="10" wrap="false" flex="1"/>
+<vbox>
+<tree id="debug-tree" flex="1" hidden="true">
+	<treecols>
+		<treecol id="nunaya" label="" flex="1" class="string" ascending="false"/>
+	</treecols>
+	<treechildren id="debug-output" flex="1"></treechildren>
+</tree>
+<iframe id="allInfo" src="comment.html" flex="1" />
+</vbox>
+<separator class="groove"/>
+<!-- Status Bar Overlay -->
+<statusbar id="blast-status-bar" />
+
+</window>

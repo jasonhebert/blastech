@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+
+  <!-- list all the packages being supplied -->
+  <RDF:Seq about="urn:mozilla:package:root">
+    <RDF:li resource="urn:mozilla:package:blastech"/>
+  </RDF:Seq>
+
+  <!-- package information -->
+  <RDF:Description about="urn:mozilla:package:blastech"
+        chrome:displayName="Blastech SPR"
+        chrome:author="Jason Hebert"
+		chrome:authorURL="http://www.ss.northropgrumman.com"
+        chrome:name="blastech"
+		chrome:description="This is a software tool used to make Steel Plate Requisitions.">
+  </RDF:Description>
+
+
+</RDF:RDF>

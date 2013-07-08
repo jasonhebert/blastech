@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE window SYSTEM "chrome://blastech/locale/blastech.dtd">
+<!--
+/*
+*===============================================================================
+*
+* Main  Select Tree XUL file. It holds selection item information.
+*
+* @FileName: select_tree.xul
+*
+* @Author: Jason Hebert
+* @Copyright Northrop Grumman Ship Systems
+*
+* @Version 0.3
+* @Revision History: 12/01/2003 - Begin development
+*
+*===============================================================================
+*/
+-->
+	
+<overlay id="qbl_tree_overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+<tree id="qbl-tree" enableColumnDrag="true" flex="1" seltype="single">
+	<treecols>
+		
+		<treecol id="qbl-id-col" label="&blast.qbl.id.label;" flex="1" persist="width ordinal hidden" class="string" ascending="false" hidden="true"/>	
+		<splitter class="tree-splitter"/>
+
+		<treecol id="qbl-partnum-col" label="&blast.qbl.partnum.label;" flex="4" persist="width ordinal hidden" class="string" ascending="false"/>
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="qbl-hull-col" label="&blast.qbl.hull.label;" flex="1" persist="width ordinal hidden" class="string" ascending="false" hidden="true"/>	
+		<splitter class="tree-splitter"/>
+				
+		<treecol id="qbl-qty-col" label="&blast.qbl.qtyOnHand.label;" flex="1" persist="width ordinal hidden" class="numeric" ascending="false"/>
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="qbl-needed-col" label="&blast.qbl.qtyNeeded.label;" flex="1" persist="width ordinal hidden" class="numeric" ascending="false"/>	
+		<splitter class="tree-splitter"/>
+
+	</treecols>
+	<treechildren id="qbl-list-tree" flex="1"></treechildren>
+</tree>
+</overlay>	

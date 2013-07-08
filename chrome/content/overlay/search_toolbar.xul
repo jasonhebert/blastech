@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE window SYSTEM "chrome://blastech/locale/blastech.dtd">
+<!--
+================================================================================ 
+/**
+* Search Toolbar
+*
+* @FileName: search_toolbar.xul
+* @Author: Jason Hebert
+* @Copyright Northrop Grumman Ship Systems
+*
+* @Version 0.3
+* @Revision History: 12/01/2003 - Begin development
+*/
+================================================================================
+-->
+
+
+<overlay id="search-toolbar_overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<toolbar id="search-toolbar" iconsize="small">
+<grid>
+	<columns>
+		<column/>
+		<column flex="1"/>
+		<column/>
+	</columns>
+	<rows>
+		<row flex="1">
+            <label class="theLabel" value="&blast.search.hull.label;"/>
+            <textbox id="hull-text" maxlength="10" size="6"/> 
+            <label class="theLabel" value="&blast.search.choose.label;"/>
+            <menulist id="search-popup" persist="value">
+                <menupopup class="popUp">
+                    <menuitem label="&blast.search.bill.label;" value="Bill"/>
+                    <menuitem label="&blast.search.partnum.label;" value="PN"/>
+                </menupopup>
+            </menulist>
+            <label class="theLabel" value="&blast.search.value.label;"/>
+            <textbox id="search-text" maxlength="200" size="20"/>
+            <button id="find-button" disabled="false" command="findCmd" tooltiptext="&blast.search.search.tooltip;">
+                <label class="srchLbl">&blast.search.search.label;</label>
+            </button>
+            <button id="clear-button" disabled="true" command="clearTxtCmd" tooltiptext="&blast.search.clear.tooltip;">
+                <label class="srchLbl" value="&blast.search.clearTxt.label;"/>
+            </button>
+        </row>
+    </rows>	
+</grid>
+</toolbar>
+</overlay>

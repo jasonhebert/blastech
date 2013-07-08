@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE window SYSTEM "chrome://blastech/locale/blastech.dtd">
+<!--
+/*
+*===============================================================================
+*
+* Main  Requisition Tree XUL file. It holds item information.
+*
+* @FileName: req_tree.xul
+*
+* @Author: Jason Hebert
+* @Copyright Northrop Grumman Ship Systems
+*
+* @Version 0.3
+* @Revision History: 12/01/2003 - Begin development
+*
+*===============================================================================
+*/
+-->
+	
+<overlay id="req_tree_overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+<tree id="req-tree" enableColumnDrag="true" flex="1" seltype="single">
+	<treecols>
+		<treecol id="req-partnum-col" label="&blast.req.partnum.label;" flex="8" persist="width ordinal hidden" class="string" ascending="false"/>
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="req-hull-col" label="&blast.req.hull.label;" flex="4" persist="width ordinal hidden" class="string" ascending="false"/>
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="req-bill-col" label="&blast.req.bill.label;" flex="6" persist="width ordinal hidden" class="string" ascending="false"/>	
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="req-sqft-col" label="&blast.req.sqft.label;" flex="4" persist="width ordinal hidden" class="string" ascending="false"/>	
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="req-qty-col" label="&blast.req.qty.label;" flex="4" persist="width ordinal hidden" class="string" ascending="false"/>
+		<splitter class="tree-splitter"/>
+        
+		<treecol id="req-um-col" label="&blast.req.um.label;" flex="2" persist="width ordinal hidden" class="string" ascending="false"/>
+		<splitter class="tree-splitter"/>
+        
+		<treecol id="req-um-col" label="&blast.req.painted.label;" flex="1" persist="width ordinal hidden" class="string" ascending="false"/>
+		<splitter class="tree-splitter"/>
+	</treecols>
+	<treechildren id="req-list-tree" flex="1"></treechildren>
+</tree>
+</overlay>	

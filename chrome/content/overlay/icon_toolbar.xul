@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE window SYSTEM "chrome://blastech/locale/blastech.dtd">
+<!--
+/*
+*=============================================================================== 
+*
+* Main Icon Toolbar file.
+* 
+* @FileName: icon_toolbar.xul
+*
+* @Author: Jason Hebert
+* @Copyright Jason Hebert / Northrop Grumman Ship Systems
+* 
+* @Revision History: 12/01/2003 - Begin development
+*
+*===============================================================================
+*/
+-->
+<overlay id="icon-toolbar_overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<!-- TOOLBAR ICON -->  
+<toolbar id="icon-toolbar">
+		<toolbarbutton id="new-icon" command="newCmd" accesskey="n" tooltiptext="&blast.icon.new.tooltip;"/>
+		<toolbarbutton id="open-icon" command="openCmd" accesskey="o" tooltiptext="&blast.icon.open.tooltip;"/>
+		<toolbarbutton id="save-icon" command="saveCmd" accesskey="s" tooltiptext="&blast.icon.save.tooltip;" />
+	<toolbarseparator/>
+		<!-- Delete All List -->
+		<toolbarbutton id="clear-btn"  command="clearCmd" tooltiptext="&blast.icon.clear.tooltip;"/>
+		<!-- Delete Selected record -->
+		<toolbarbutton id="delete-btn" command="deleteCmd" tooltiptext="&blast.icon.delete.tooltip;"/>
+</toolbar>    	
+
+</overlay>	
+	

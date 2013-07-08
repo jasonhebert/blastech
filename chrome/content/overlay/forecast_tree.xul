@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE window SYSTEM "chrome://blastech/locale/blastech.dtd">
+<!--
+/*
+*===============================================================================
+*
+* Main  Result Tree XUL file. It holds item information.
+*
+* @FileName: forecast_tree.xul
+*
+* @Author: Jason Hebert
+* @Copyright Northrop Grumman Ship Systems
+*
+* @Version 0.3
+* @Revision History: 12/01/2003 - Begin development
+*
+*===============================================================================
+*/
+-->
+	
+<overlay id="forecast_tree_overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+<tree id="forecast-tree" enableColumnDrag="true" flex="1" seltype="single" onselect="showQBL(this.currentIndex);">
+	<treecols>
+        
+		<treecol id="forecast-id-col" label="&blast.fore.id.label;" flex="2" persist="width ordinal hidden" class="string" ascending="false" hidden="true"/>
+		<splitter class="tree-splitter"/>
+        
+        <treecol id="forecast-partnum-col" label="&blast.fore.partnum.label;" flex="4" persist="width ordinal hidden" class="string" ascending="false"/>
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="forecast-hull-col" label="&blast.fore.hull.label;" flex="1" persist="width ordinal hidden" class="string" ascending="false"/>
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="forecast-bill-col" label="&blast.fore.bill.label;" flex="4" persist="width ordinal hidden" class="string" ascending="false" hidden="true"/>	
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="forecast-schdate-col" label="&blast.fore.schdate.label;" flex="1" persist="width ordinal hidden" class="string" ascending="false"/>	
+		<splitter class="tree-splitter"/>
+		
+		<treecol id="forecast-oocvrd-col" label="&blast.fore.oocvrd.label;" flex="1" persist="width ordinal hidden" class="numeric" ascending="false"/>
+		<splitter class="tree-splitter"/>
+        
+		<treecol id="forecast-um-col" label="&blast.fore.um.label;" flex="1" persist="width ordinal hidden" class="string" ascending="false"/>
+		<splitter class="tree-splitter"/>
+
+	</treecols>
+	<treechildren id="forecast-list-tree" flex="1"></treechildren>
+</tree>
+</overlay>	

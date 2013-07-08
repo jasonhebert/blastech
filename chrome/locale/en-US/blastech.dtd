@@ -1,0 +1,98 @@
+<!--
+/*
+*===============================================================================
+*
+* Main  Blastech DTD file. It contains Document Entities.
+*
+* @FileName: blastech.dtd
+*
+* @Author: Jason Hebert
+* @Copyright Northrop Grumman Ship Systems
+*
+* @Version 0.3
+* @Revision History: 12/01/2003 - Begin development
+*
+*===============================================================================
+*/
+-->
+
+<!--====================== ENTITY DECLARATIONS ==============================-->
+
+<!-- Application Information -->
+<!ENTITY app.name.short						"Blastech SPR">
+<!ENTITY app.name.long						"Blastech Steel Plate Requisition">
+<!ENTITY app.version						"0.3">
+<!ENTITY app.author							"Jason Hebert">
+<!ENTITY app.author.email					"">
+<!ENTITY app.copyright						"Northrop Grumman Ship Systems">
+
+<!-- Window Title -->
+<!ENTITY blast.main_window.title			"Blastech SPR v0.3">
+
+<!-- Menu Bar Labels -->
+<!ENTITY blast.menu.file.label              "File">
+<!ENTITY blast.menu.new.label               "New">
+<!ENTITY blast.menu.open.label              "Open">
+<!ENTITY blast.menu.save.label              "Save">
+<!ENTITY blast.menu.print.label             "Print">
+<!ENTITY blast.menu.export.label            "Export XML">
+<!ENTITY blast.menu.exit.label              "Exit">
+<!ENTITY blast.menu.options.label           "Options">
+<!ENTITY blast.menu.settings.label          "Settings">
+<!ENTITY blast.menu.help.label              "Help">
+<!ENTITY blast.menu.topics.label            "Contents">
+<!ENTITY blast.menu.about.label             "About">
+
+
+
+
+<!-- Icon Toolbar Tooltips -->
+<!ENTITY blast.icon.new.tooltip             "New Requisition">
+<!ENTITY blast.icon.open.tooltip            "Open Saved Requisitions">
+<!ENTITY blast.icon.save.tooltip            "Save Current Requisition">
+<!ENTITY blast.icon.delete.tooltip          "Delete Selected Record">
+<!ENTITY blast.icon.clear.tooltip           "Clear Forecast Entries">
+
+
+<!-- Search Toolbar Labels -->
+<!ENTITY blast.search.partnum.label         "Part Number">
+<!ENTITY blast.search.value.label           "Search Value: ">
+<!ENTITY blast.search.hull.label            "Hull">
+<!ENTITY blast.search.choose.label          "Search Field: ">
+<!ENTITY blast.search.bill.label            "Bill">
+<!ENTITY blast.search.search.label          "Search Forecast">
+<!ENTITY blast.search.clearTxt.label        "Clear Fields">
+<!ENTITY blast.search.clear.tooltip         "Clear Search Text Fields">
+<!ENTITY blast.search.search.tooltip        "Search For Selected Forecast Entries">
+
+<!-- Forecast Tree Labels -->
+<!ENTITY blast.fore.partnum.label           "Part Number">
+<!ENTITY blast.fore.hull.label              "Hull">
+<!ENTITY blast.fore.bill.label              "Bill">
+<!ENTITY blast.fore.schdate.label           "SchDate">
+<!ENTITY blast.fore.oocvrd.label            "OOC Qty">
+<!ENTITY blast.fore.um.label                "UM">
+<!ENTITY blast.fore.id.label                "ID">
+
+<!-- Qbl Tree Labels -->
+<!ENTITY blast.qbl.partnum.label            "Part Number">
+<!ENTITY blast.qbl.qtyOnHand.label          "OH">
+<!ENTITY blast.qbl.qtyNeeded.label          "OOC">
+<!ENTITY blast.qbl.hull.label               "Hull">
+<!ENTITY blast.qbl.id.label                 "ID">
+
+<!-- Requisition Tree Labels -->
+<!ENTITY blast.req.partnum.label            "Part Number">
+<!ENTITY blast.req.hull.label               "Hull">
+<!ENTITY blast.req.bill.label               "Bill">
+<!ENTITY blast.req.sqft.label               "SqFt">
+<!ENTITY blast.req.qty.label                "Qty">
+<!ENTITY blast.req.um.label                 "UM">
+<!ENTITY blast.req.painted.label            "Painted?">
+
+<!-- Main Window Labels -->
+<!ENTITY blast.foreDetails.label            "Forecast Details - double click to view OnHand.">
+<!ENTITY blast.qblDetails.label             "OnHand Details - double click to add to Requisition.">
+<!ENTITY blast.reqDetails.label             "Requisition Details">
+
+

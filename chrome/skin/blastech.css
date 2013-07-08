@@ -1,0 +1,229 @@
+/*
+*=============================================================================== 
+*
+* Main Blastech CSS file. It contains main style information.
+* 
+* @FileName: blastech.css
+*
+* @Author: Jason Hebert AKA Nikren - nikren@shadowborn.com
+* @CopyRight Jason Hebert / Northrop Grumman Ship Systems
+* 
+* @Revision History: 12/01/2003 - Begin development
+*
+*===============================================================================
+*/
+@import url('chrome://global/skin');
+
+.theLabel {
+    -moz-appearance: none;
+    padding-top: 0.4em;
+}
+
+.srchLbl {
+    -moz-appearance: none;
+    padding: 0 5px;
+    margin: -3px;
+}
+
+menulist {
+    -moz-appearance: none;
+    padding: 0px;
+    min-width: 100px;
+    max-height: 22px;
+    min-height: 22px;
+}
+
+.popUp {
+    -moz-appearance: none;
+    padding: 0px;
+}
+
+#popLbl {
+    text-align: right;
+    width: 100%;
+}
+
+#hull-text {
+    -moz-appearance: none;
+}
+
+#search-text {
+    -moz-appearance: none;
+}
+
+#search-toolbar{
+    -moz-appearance: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 12px;
+    min-height: 10px !important;
+
+}
+
+#find-button {
+    -moz-appearance: none;
+    max-height: 22px;
+    min-height: 22px;
+    padding: 0;
+}
+
+#clear-button {
+    -moz-appearance: none;
+    max-height: 22px;
+    min-height: 22px;
+    padding: 0;
+}
+
+#blast-status-bar{
+  border: none;
+  margin: 0;
+
+}
+
+#main-box{
+  border: none;
+  margin: 0;
+
+}
+
+#main-menubar{
+  margin: 0;
+
+}
+
+
+
+#icon-toolbar{
+  margin: 0;
+
+}
+
+#req-box{
+  border: none;
+  margin: 0;
+
+}
+
+#debug-output { 
+    -moz-appearance: none;
+    background-color: #fff;
+    color: #000;
+}
+
+textbox[readonly="true"] {
+	background-color: White;
+}
+
+.detail {
+	background-color: White;
+	color: Black;
+}
+
+body.req {
+	background-color: white;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+body.help {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.numeric { 
+	text-align: right;
+}
+
+.date { 
+	text-align: right;
+}
+
+/*Icon Buttons*/
+
+#new-icon {
+	 list-style-image: url(../skin/images/filenew.png);
+}
+
+#new-icon[disabled="true"] {
+	list-style-image: url(../skin/images/filenew_disabled.png);
+}
+
+#open-icon {
+	list-style-image: url(../skin/images/fileopen.png);
+}
+
+#open-icon[disabled="true"] {
+	list-style-image: url(../skin/images/fileopen_disabled.png);
+}
+
+#abort-icon {
+	list-style-image: url(../skin/images/abort.png);
+}
+
+#abort-icon[disabled="true"] {
+	list-style-image: url(../skin/images/abort_disabled.png);
+}
+
+#save-icon {
+	list-style-image: url(../skin/images/filesave.png);
+}
+
+#save-icon[disabled="true"] {
+	list-style-image: url(../skin/images/filesave_disabled.png);
+}
+
+#goAmazon-icon {
+	list-style-image: url(../skin/images/goamazon.png);
+}
+
+#goAmazon-icon[disabled="true"] {
+	list-style-image: url(../skin/images/goamazon_disabled.png);
+}
+
+#cart-icon {
+	list-style-image: url(../skin/images/cart.png);
+}
+
+#goGoogle-icon {
+	list-style-image: url(../skin/images/gogoogle.png);
+}
+
+#goGoogle-icon[disabled="true"] {
+	list-style-image: url(../skin/images/gogoogle_disabled.png);
+}
+
+#comment-button {
+	list-style-image: url(../skin/images/comment.png);
+}
+
+#comment-button[disabled="true"] {
+	list-style-image: url(../skin/images/comment_disabled.png);
+}
+
+
+
+#next-btn {
+	list-style-image: url(../skin/images/forward.png);
+}
+
+#next-btn[disabled="true"] {
+	list-style-image: url(../skin/images/forward_disabled.png);
+}
+
+#clear-btn {
+	list-style-image: url(../skin/images/clear.png);
+}
+
+#clear-btn[disabled="true"] {
+	list-style-image: url(../skin/images/clear_disabled.png);
+}
+
+#delete-btn {
+	list-style-image: url(../skin/images/delete.png);
+}
+
+#delete-btn[disabled="true"] {
+	list-style-image: url(../skin/images/delete_disabled.png);
+}
+
+    

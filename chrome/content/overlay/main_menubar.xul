@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE window SYSTEM "chrome://blastech/locale/blastech.dtd">
+<!--
+/*
+*===============================================================================
+*
+* Main  MenuBar Overlay file. It contains menubar XUL.
+*
+* @FileName: main_menubar.xul
+*
+* @Author: Jason Hebert
+* @Copyright Northrop Grumman Ship Systems
+*
+* @Version 0.3
+* @Revision History: 12/01/2003 - Begin development
+*
+*===============================================================================
+*/
+-->
+
+<overlay id="main-menubar"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+<commandset id="menubarCommand">
+	<command id="newCmd" 		oncommand=""/>
+	<command id="openCmd" 		oncommand=""/>
+	<command id="saveCmd" 		oncommand=""/>
+	<command id="printCmd" 		oncommand=""/>
+	<command id="exportCmd" 	oncommand=""/>
+	<command id="exitCmd" 		oncommand="window.close()"/>
+	<command id="settingsCmd" 	oncommand=""/>
+	<command id="topicsCmd" 	oncommand=""/>
+	<command id="aboutCmd" 		oncommand=""/>
+</commandset> 	
+
+<menubar id="main-menubar">
+	<menu id="file-menu" label="&blast.menu.file.label;" accesskey="f">
+		<menupopup id="file-popup">
+			<menuitem label="&blast.menu.new.label;" command="newCmd" accesskey="n"/>
+			<menuitem label="&blast.menu.open.label;" command="openCmd" accesskey="o"/>
+			<menuitem label="&blast.menu.save.label;" command="saveCmd" accesskey="s"/>
+				<menuseparator/>
+			<menuitem label="&blast.menu.print.label;" command="printCmd" accesskey="p"/>
+				<menuseparator/>
+			<menuitem label="&blast.menu.export.label;" command="exportCmd"/>	
+				<menuseparator/>
+			<menuitem label="&blast.menu.exit.label;" command="exitCmd" accesskey="x"/>
+		</menupopup>
+	</menu>
+	<menu id="options-menu" label="&blast.menu.options.label;" accesskey="t">
+		<menupopup id="options-popup">
+			<menuitem label="&blast.menu.settings.label;" command="settingsCmd"/>
+		</menupopup>
+	</menu>
+	<menu id="help-menu" label="&blast.menu.help.label;" accesskey="h">
+		<menupopup id="help-popup">
+			<menuitem label="&blast.menu.topics.label;" command="topicsCmd" accesskey="C"/>
+			<menuitem label="&blast.menu.about.label;" command="aboutCmd" accesskey="a"/>
+		</menupopup>
+	</menu>
+</menubar>	
+
+</overlay>	

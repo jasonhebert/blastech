@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE window SYSTEM "chrome://blastech/locale/blastech.dtd">
+<!--
+/*
+*===============================================================================
+*
+* Main  StatusBar XUL file. It holds status information.
+*
+* @FileName: status_statusbar.xul
+*
+* @Author: Jason Hebert
+* @Copyright Northrop Grumman Ship Systems
+*
+* @Version 0.3
+* @Revision History: 12/01/2003 - Begin development
+*
+*===============================================================================
+*/
+-->
+<overlay id="debug_box_overlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+<statusbar id="blast-status-bar">
+	<statusbarpanel id="out-status" flex="2"/>
+	<statusbarpanel id="record-status" flex="1"/>
+</statusbar>
+
+</overlay>
