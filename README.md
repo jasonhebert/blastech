@@ -1,4 +1,8 @@
-blastech
+Blastech Steel Plate Requisition
 ========
 
-Old code from XUL project for Northrup Grumman Ship Systems
+This is an old project I worked on for Northrup Grumman Ship Systems in 2003.
+
+The application was an XUL based interface that ran in Mozilla XULRunner.
+
+The application facilitated requisitioning of steel plate material from a vendor based on material forecast data to support JIT material support.
